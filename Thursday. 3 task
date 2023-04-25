@@ -100,3 +100,9 @@ root.render(<Provider store={store}> <App/></Provider>)
 // Исправленную версию строки напишите в качестве ответа.
 
 // 🖥 Пример ответа: type InitStateType = typeof initState
+
+
+Solution
+
+const store = createStore(rootReducer, applyMiddleware(thunk))
+
