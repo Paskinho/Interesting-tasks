@@ -93,3 +93,14 @@ root.render(<Provider store={store}> <App/></Provider>)
 // 🖥 Пример ответа: type InitStateType = typeof initState
 
 // P.S. Эта ошибка из реальной жизни, студенты так часто ошибаются и не могут понять в чем дело.
+
+
+Solution:
+Uncorrectly useEffect
+Nedded call thunk creator with dispatch
+  useEffect(() => {
+    dispatch(getPostsTC)
+  }, [])
+  
+ 
+dispatch(getPostsTC())
