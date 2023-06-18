@@ -105,3 +105,5 @@ root.render(<Provider store={store}> <App/></Provider>)
 // В качестве ответа указать исправленную строку коду
 
 // 🖥 Пример ответа: const store = createStore(rootReducer, applyMiddleware(thunk))
+
+Correct answer return instance.get<CommentType[]>('comments')
