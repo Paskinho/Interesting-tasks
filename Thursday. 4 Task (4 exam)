@@ -60,3 +60,7 @@ root.render(<BrowserRouter><App/></BrowserRouter>)
 // ❗После того как показался alert форма не должна перегружать все приложение
 
 // 🖥 Пример ответа: alert(JSON.stringify(values))
+
+Correct answer
+
+<form onSubmit={formik.handleSubmit}>
