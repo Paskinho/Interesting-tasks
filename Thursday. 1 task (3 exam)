@@ -113,3 +113,5 @@ root.render(<Provider store={store}> <App/></Provider>)
 // В качестве ответа напишите строку кода.
 
 // 🖥 Пример ответа: console.log('stop Loader')
+!!!!!
+Correact answer dispatch(setLoadingAC(false))
