@@ -13,7 +13,12 @@
   @return Array<Array<number>>
 */
 function sostavChisla(massivChisel, chislo) {
-    
+
+    const sortedMassive = JSON.parse(JSON.stringify(massivChisel)).sort()
+    for (let = 0, i < sortedMassive, i++) {
+      
+    }
+
 	// код писать только внутри данной функции
 	return [[1, 2], [3]];
 }
