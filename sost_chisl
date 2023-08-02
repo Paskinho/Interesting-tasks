@@ -15,11 +15,12 @@
 function sostavChisla(massivChisel, chislo) {
 
 //решение
-  const sortedMassive = JSON.parse(JSON.stringify(massivChisel)).sort()
+    const sortedMassive = JSON.parse(JSON.stringify(massivChisel)).sort()
   const arr1 = [] // создадим пустой массив
   const output = []
   
-    for (let = 0, i < sortedMassive, i++) { // перебираем значения от нуля до значения, которое равно
+    for (let i = 0; i < sortedMassive.length; i++) { // перебираем значения от нуля до значения, которое меньше
+      //длины отсортированного массива
       
       arr1.push(sortedMassive[i]) // добавим в пустой массив, в конец значение из перебора цикла for
    
