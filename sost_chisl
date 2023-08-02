@@ -14,15 +14,41 @@
 */
 function sostavChisla(massivChisel, chislo) {
 
-    const sortedMassive = JSON.parse(JSON.stringify(massivChisel)).sort()
-    for (let = 0, i < sortedMassive, i++) {
+//решение
+  const sortedMassive = JSON.parse(JSON.stringify(massivChisel)).sort()
+  const arr1 = [] // создадим пустой массив
+  const output = []
+  
+    for (let = 0, i < sortedMassive, i++) { // перебираем значения от нуля до значения, которое равно
       
-    }
-
+      arr1.push(sortedMassive[i]) // добавим в пустой массив, в конец значение из перебора цикла for
+   
+      const summ = arr1.reduce((a,b)=> a+b) // суммируем все элементы массива arr1
+      
+      if (summ === chislo ) {
+        
+        output.push([...arr1])
+        
+      } // если сумма элементов равна arr1, 
+      //то возвращаем пустой массив, добавляя в конец
+     
+      if (summ > chislo) {
+        arr1.pop()
+        
+        i = sortedMassive.indexOf(arr1[arr1.length - 1]); // найти в отсортированном 
+        //массиве последний элемент массива arr1
+        
+        arr1.pop()
+        
+        
+      } // если сумма элементов больше, чем число, то сначала
+      //удяляем последний элемент массива arr1
+      //
+      
+    } 
 	// код писать только внутри данной функции
-	return [[1, 2], [3]];
+	return output;
 }
-
 // console.log(sostavChisla([8, 2, 3, 4, 6, 7, 1], 99));
 
 function compareNumericArrays(arr1, arr2) {
