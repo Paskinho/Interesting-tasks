@@ -140,3 +140,14 @@ function runTests() {
     console.log(`checkStringForBracects test failed with ${errors} errors`);
   }
 }
+
+
+// Alternative solution
+
+function sostavChisla(massivChisel, chislo) {
+  
+  return [...Array(2**massivChisel.length)].map((x,i)=>massivChisel.
+                                     filter((x,j)=>i&1<<j).
+                                     sort()).filter((x,i)=>eval(x.join`+`)==chislo);
+}
+
