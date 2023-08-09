@@ -81,3 +81,6 @@ root.render(
 // В качестве ответа укажите исправленную версию строки.
 //
 // 🖥 Пример ответа: dispatch(setFind(defWords))
+
+
+Solution dispatch(setWords([value])) in 56 string
