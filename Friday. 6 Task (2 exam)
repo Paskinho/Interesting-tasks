@@ -86,4 +86,6 @@ root.render(
 Correct answer (in 58 string)
 deleteSome(p.id))}> X </button>
 
+SOLUTION goodMorning: state.goodMorning.filter(g => g.name !== action.id)
+
 
