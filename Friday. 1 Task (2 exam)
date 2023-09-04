@@ -84,3 +84,9 @@ root.render(
 
 
 Solution dispatch(setWords([value])) in 56 string
+
+Correct answer: 
+dispatch(setFind(value))
+
+
+
