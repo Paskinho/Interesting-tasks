@@ -83,3 +83,4 @@ root.render(
 // 🖥 Пример ответа: console.log(work + donate)
 
 My solution dispatch(changeValue({balance: work * donate}))
+else dispatch(changeValue({balance: work + donate}))
