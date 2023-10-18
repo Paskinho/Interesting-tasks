@@ -1,0 +1,53 @@
+//App.tsx
+
+import React, {useEffect, useState} from 'react';
+import logo from './logo.svg';
+import './App.css';
+import io from "socket.io-client"
+
+function App() {
+
+    useEffect(()=> {
+            const socket = io();
+
+    })
+
+
+    const [messages, setMessages] = useState([
+        {
+            message: "Hello, Olga", id: "23f2332", user: {
+                id: "sadf2", name: "Uladzik"
+            }
+        },
+        {
+            message: "Hi, Uladzik", id: "23f2332123", user: {
+                id: "124154", name: "Olga"
+            }
+        }
+    ])
+
+    return (
+        <div className="App">
+          <div>
+            <div style={{
+                border: '1px solid black', padding: "10px", height: "300px",
+                overflow: "scroll", width:"300px"
+            }}>
+                {messages.map(m => {
+                    return <div>
+                        <b>{m.user.name}:</b>
+                        {m.message}
+                        <hr/>
+                    </div>
+                })}
+            </div>
+          <textarea>
+
+          </textarea>
+          <button>Send</button>
+        </div>
+        </div>
+    );
+}
+
+export default App;
