@@ -196,3 +196,9 @@ root.render(
 // ❗ Ответ дайте через пробел 
 
 // 🖥 Пример ответа: a === '1' b !== a c === state
+
+Correct answer
+const condition1 = activeColumn
+const condition2 = sortBy === name
+const condition3 = sortDirection === 'asc'
+
