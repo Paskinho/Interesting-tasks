@@ -41,3 +41,5 @@ root.render(<Jpegs/>);
 // В качестве ответа укажите исправленную версию строки.
 //
 // 🖥 Пример ответа: {type: 'image/gif'}
+
+Correct answer: in axios get add {responseType: "'arraybuffer'"}
